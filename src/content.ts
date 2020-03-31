@@ -65,12 +65,9 @@ export default class Content {
         res.write(`Összesen: ${megoldás.HatodikFeladat} Ft-ot\n`);
 
         res.write("\nFile-ok: percek.txt\n");
-        const percek: string[] = fs
-            .readFileSync("percek.txt")
-            .toString()
-            .split("\n");
+        const percek: string[] = fs.readFileSync("percek.txt").toString().split("\n");
 
-        percek.forEach(element => {
+        percek.forEach((element) => {
             res.write(element);
         });
 

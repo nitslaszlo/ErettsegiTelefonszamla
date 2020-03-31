@@ -1,5 +1,5 @@
 ﻿import http from "http";
-import Content from "./content";
+import Content from "./Content";
 
 class Program {
     constructor() {
